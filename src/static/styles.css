@@ -65,6 +65,61 @@ section h3 {
   background-color: #f9f9f9;
 }
 
+/* Estilo para a lista de participantes */
+.activity-card .participants-list {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.activity-card .participants-list li {
+  display: flex;
+  align-items: center;
+  background: #e3e7fa;
+  border-radius: 20px;
+  padding: 4px 12px 4px 6px;
+  font-size: 14px;
+  color: #1a237e;
+  box-shadow: 0 1px 2px rgba(26,35,126,0.06);
+  /* Adiciona uma borda para destacar ainda mais */
+  border: 2px solid #c5cae9;
+  transition: background 0.2s, border 0.2s;
+}
+
+.activity-card .participants-list li:hover {
+  background: #c5cae9;
+  border-color: #7986cb;
+}
+
+.activity-card .participant-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 9px;
+  flex-shrink: 0;
+  /* Cor padrão, será sobrescrita por classes dinâmicas */
+  background: #1a237e;
+  box-shadow: 0 1px 4px rgba(26,35,126,0.12);
+  border: 2px solid #fff;
+}
+
+/* Paleta de cores para avatares (até 6 variações) */
+.participant-avatar.color-0 { background: #3949ab; }
+.participant-avatar.color-1 { background: #00897b; }
+.participant-avatar.color-2 { background: #fbc02d; color: #333; }
+.participant-avatar.color-3 { background: #e53935; }
+.participant-avatar.color-4 { background: #8e24aa; }
+.participant-avatar.color-5 { background: #43a047; }
+
 .activity-card h4 {
   margin-bottom: 10px;
   color: #0066cc;
